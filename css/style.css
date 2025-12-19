@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    padding: 40px;
+    text-align: center;
+}
+
+.hero-banner {
+    width: 100%;
+    min-height: 70vh;
+    background-image: url('../assets/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.team {
+    padding: 40px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-item {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.radio-group {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+h4 {
+    text-align: center;
+}
+
+.message {
+    padding: 40px;
+}
+
+.message-container {
+    display: flex;
+    gap: 20px;
+}
+
+form {
+    flex: 1;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.output {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.banner {
+    background: #eee;
+    padding: 60px;
+    text-align: center;
+}
+
+.profile-content {
+    padding: 40px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .team-list,
+    .message-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}

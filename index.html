@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Ichsan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="Assets/logo.png" alt="logo IAS" height="50px">
+    </div>
+    <nav>
+        <a href="#home-page">Home</a>
+        <a href="#our-team">Our Team</a>
+        <a href="#portfolio-page">Portfolio</a>
+        <a href="#message">Message Us</a>
+    </nav>
+</header>
+
+<section class="hero" id="home-page">
+    <h1 id="welcomeText">Hi, Selamat Datang di Website Saya</h1>
+    <p>Ini adalah website portfolio latihan pertama saya</p>
+</section>
+
+<section class="hero-banner">
+  
+</section>
+
+<section id="our-team"  class="team">
+    <h2>Our Team</h2>
+    <div class="team-list">
+        <div>
+            <img src="Assets/profile.jpg" alt="fotoichsan" class="team-item">
+            <h4>Ichsan</h4>
+        </div>
+        <div >
+            <img src="Assets/profile.jpg" alt="fotoabdul" class="team-item">
+            <h4>Abdul</h4>
+        </div>
+        <div>
+            <img src="Assets/profile.jpg" alt="fotosany" class="team-item" >
+            <h4>Sany</h4>
+        </div>
+    </div>
+</section>
+
+<section class="hero" id="portfolio-page">
+    <h1>Portfolio</h1>
+    <p>Saat ini belum ada portfolio karena aku masih belajar, doakan kedepan akan ada banyak karyaku yah</p>
+</section>
+
+<section id="message" class="message">
+    <h2>Message Us</h2>
+    <div class="message-container">
+        <form id="messageForm">
+            <label>Nama</label>
+            <input type="text" id="name" required>
+
+            <label>Tanggal Lahir</label>
+            <input type="date" id="birthdate" required>
+            <label>Jenis Kelamin</label>
+                <div class="radio-group">
+                    <label class="radio-item">
+                        <input type="radio" name="gender" value="Laki-laki" required>
+                        Laki-laki
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="radio" name="gender" value="Perempuan">
+                        Perempuan
+                    </label>
+                </div>
+            <label>Pesan</label>
+            <textarea id="messageText" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="output" id="outputBox">
+            <p><strong>Current time:</strong> <span id="time"></span></p>
+            <p><strong>Nama:</strong> <span id="outName"></span></p>
+            <p><strong>Tanggal Lahir:</strong> <span id="outBirth"></span></p>
+            <p><strong>Jenis Kelamin:</strong> <span id="outGender"></span></p>
+            <p><strong>Pesan:</strong> <span id="outMessage"></span></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Ichsan Abdul Sany. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
